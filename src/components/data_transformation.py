@@ -13,10 +13,6 @@ from src.logger import logging
 import os
 from src.utils import save_object
 
-import pdb
-import colorama
-colorama.init()
-
 
 
 @dataclass
@@ -75,7 +71,6 @@ class DataTransformation:
     def initiate_data_transformation (self, train_path, test_path):
         try:
             ## Reading Train And Test Data
-            pdb.set_trace()
             train_df = pd.read_csv(train_path)
             test_df = pd.read_csv(test_path)
 
