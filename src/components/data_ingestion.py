@@ -25,7 +25,7 @@ class DataIngestion:
             csv_path = os.path.join('notebooks', 'data', 'Gemstone.csv')
             if not os.path.exists(csv_path):
                 logging.info("Gemstone File Not Found.")
-                raise CustomException(f"File Now Found {csv_path}", sys)
+                raise CustomException(f"File Not Found {csv_path}", sys)
             
             df = pd.read_csv(csv_path)
             logging.info(f"Dataset read successfully with shape {df.shape}")
