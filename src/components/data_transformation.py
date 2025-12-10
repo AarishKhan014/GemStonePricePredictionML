@@ -25,7 +25,7 @@ class DataTransformation:
 
     def get_data_transformation_object(self):
         try:
-            # logging.info('Data Transformation Initiated')
+            logging.info('Data Transformation Initiated')
             
             numerical_cols = ['carat', 'depth', 'table', 'x', 'y', 'z']
             categorical_cols = ['cut', 'color', 'clarity']
